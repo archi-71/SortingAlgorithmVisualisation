@@ -1,6 +1,6 @@
 # Sorting Algorithms Visualised
 
-This project is an educational visualiser website which allows the user to see how a variety of sorting algorithms operate and compare their efficiency for different kinds of inputs. 
+This project is an educational visualiser website which allows the user to see how a variety of sorting algorithms operate, and compare their efficiency for different kinds of inputs. 
 
 Sorting algorithms operate on an initially unsorted list of positive integers, where each element is represented visually as a vertical bar, with a height proportional to the integer's size. Lists are randomly generated to be sorted; the user can adjust the length of the list from 1 to 1000, as well as the maximum integer value of each element also from 1 to 1000.
 
