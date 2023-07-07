@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sorting Visualisation</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="sorting.js"></script>
+  </head>
+  <body data-bs-theme="dark">
+    <div class="container">
+      <h1>Sorting Algorithms Visualised</h1>
+      <div id="visualisation"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div id="sortControls" class="col-lg-4 col-md-12 text-center">
+            <label id="algorithmLabel" class="mx-1 my-2" for="algorithm">Algorithm:</label>
+            <select id="algorithm" class="mx-1 my-2" name="algorithm">
+              <option value="selection">Selection Sort</option>
+              <option value="insertion">Insertion Sort</option>
+              <option value="bubble">Bubble Sort</option>
+              <option value="cocktail">Cocktail Shaker Sort</option>
+              <option value="merge">Merge Sort</option>
+              <option value="quick">Quick Sort</option>
+              <option value="heap">Heap Sort</option>
+            </select>
+            <span id="status"></span>
+            <button id="sortList" class="btn btn-success mx-1 my-2">Sort</button>
+            <button id="cancelSort" class="btn btn-danger mx-1 my-2" style="display:none">Cancel</button>
+            <button id="unsortList" class="btn btn-success mx-1 my-2" style="display:none">Reset</button>
+          </div>
+          <div id="listControls" class="col-lg-8 col-md-12 text-center">
+            <label class="mx-1 my-2" for="listLength">List Length:</label>
+            <input id="listLength" class="mx-1 my-2" name="listLength" type="number" min="1" max="1000">
+            <label class="mx-1 my-2" for="maxValue">Max Element Value:</label>
+            <input id="maxValue" class="mx-1 my-2" name="maxValue" type="number" min="1" max="1000">
+            <button id="generateList" class="btn btn-success mx-1 my-2">Generate Random List</button>
+          </div>
+        </div>
+        <div id="speedControls" class="text-center">
+          <label class="mx-1 my-3" for="speed">Speed:</label>
+          <input id="speed" class="form-range w-25 mx-1 my-3 text-success" name="speed" type="range" min="0" max="12">
+          <span id="speedText" class="mx-1 my-3"></span>
+        </div>
+      </div>
+      <span id="lengthCheck" style="display:none"></span>
+    </div>
+  </body>
+</html>
