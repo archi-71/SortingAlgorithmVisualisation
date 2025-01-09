@@ -1,6 +1,6 @@
 # Sorting Algorithms Visualised
 
-Click [here](https://archi-71.github.io/SortingVisualisation/) to see the project.
+Click [here](https://archi-71.github.io/sorting-visualisation/) to see the project.
 
 This project is an educational visualiser website which allows the user to see how a variety of sorting algorithms operate, and compare their efficiency for different kinds of inputs. 
 
